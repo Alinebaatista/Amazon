@@ -1,0 +1,379 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+  
+
+body{
+    background-color: rgb(15, 23, 30) ;
+    font-family: Amazon Ember,Amazon Arabic Ember,Arial,sans-serif; /*estilo do texto*/
+    font-size: 16px; /*alteração do tamanho do texto*/
+    color: rgba(242,244,246,.9); /*cor do texto*/ 
+    height: 92vh;
+    justify-content: center;
+}
+
+a{
+    color: rgba(242,244,246,.9);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav{
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: Amazon Ember,Amazon Arabic Ember,Arial,sans-serif; 
+    height: 8vh;    
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+}
+.nav-list li{
+    letter-spacing: 3px;
+    margin-left: 32px; 
+}
+
+.estilo2{
+    background-image: linear-gradient(rgb(26, 35, 47),rgb(24, 34, 45));
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+.container .card {
+    max-width: 300px;
+    height: 215px;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover {
+    height: 450px
+}
+
+.container .card .imgContainer {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    top: auto;
+    left: 10px;
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2)
+}
+
+.container .card .imgContainer img {
+    max-width: 100%;
+    border-radius: 4px
+}
+
+.container .card .content {
+    position: relative;
+    margin-top: -140px;
+    padding: 10px 15px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s ease-in-out
+}
+
+.container .card:hover .content {
+    visibility: visible;
+    opacity: 1;
+    margin-top: -40px;
+    transition-delay: 0.3s
+}
+
+@media (max-width: 330px) {
+    .container .card .imgContainer {
+        left: -2px
+    }
+}
+
+
+/*imagem pular com carrosel  Aline*/
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 100px;
+    transition: transform 450ms;
+    
+}
+.row_poster{
+    width: 100%;
+    object-fit: contain;
+    max-height: 100px;
+    margin-right: 10px;
+    transition: transform 450ms;
+    
+}
+.row_posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+   padding: 20px;
+}
+
+.row_posters::-webkit-scrollbar{
+    display: none;
+}
+.row_posterLarge{
+    max-height: 200px;
+}
+
+.img-container:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+}
+/*imagem pular*/
+.img-containe{
+    width: 300px;
+    height: 200px;
+    overflow:hidden;
+    align-items: center;/*alinhamento dos itens no centro*/
+}
+.img-containe img{
+    width: 100%;
+    height: 100%;
+    -webkit-transition: -webkit-transform .5s ease;
+    transition: transform 0.5s ease;
+    border-radius: 15px;
+    align-items: center;/*alinhamento dos itens no centro*/
+}
+.img-containe:hover{
+    -webkit-transform: scale(1.5);
+    transform: scale(1.1);
+    border-radius: 15px;
+    
+}
+
+  
+ /*botao Aline*/
+
+
+.glow-on-hover {
+    width: 220px;
+    height: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+}
+/*botão categoria*/
+.glow-on-hover:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left:-2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glow-on-hover:active {
+    color: #000
+}
+
+.glow-on-hover:active:after {
+    background: transparent;
+}
+
+.glow-on-hover:hover:before {
+    opacity: 1;
+}
+
+.glow-on-hover:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #111;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 400% 0; }
+    100% { background-position: 0 0; }
+}
+
+.new{
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-image: url('https://i.pinimg.com/originals/bf/d5/0b/bfd50b344fbd26ff1238a6b194cb56d6.png');
+    width: 600px;
+
+}
+.slider {
+    display: block;
+    height: 300px;
+    width: 97%;
+    margin: 0 auto;
+    /*margin-top: 20px; - para garantir um melhor visual do slider com relação à página*/
+    position: relative;
+}
+
+.slider li {
+    list-style: none; /*garante-se um posicionamento absoluto*/
+    position: absolute;
+}
+
+.slider img {
+    margin: 0 auto;
+    height: 300px;
+    width: 1800px;
+    vertical-align: top; /*indica que a imagem ficará alinhada verticalmente com relação ao seu topo.*/
+}
+
+.slider input {
+    display: none; /*nenhuma amostragem visual do elemento*/
+    
+}
+
+.slider label {
+    background-color: rgb(129, 129, 122);
+    bottom: 10px;
+    cursor: pointer; /*Para mostrar para o usuário que são clicáveis*/
+    display: block;
+    height: 10px;
+    position: absolute;
+    width: 10px;
+    border-radius: 100%;
+    z-index: 10; /*garante que os labels serão mostrados sobre as imagens em qualquer circunstância*/
+}
+
+.slider li:nth-child(1) label { /*para buscar o primeiro, segundo e terceiro filhos de uma determinada classe ou elemento*/
+    left: 10px;
+}
+
+.slider li:nth-child(2) label {
+    left: 40px;
+}
+
+.slider li:nth-child(3) label {
+    left: 70px;
+}
+.slider li:nth-child(4) label {
+    left: 100px;
+}
+
+
+.slider img {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+    opacity: 1;
+    visibility: visible;
+    z-index: 10;
+}
+
+.dropbtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+  }
+  
+  .dropdown {
+    position: relative;
+    display: block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #233142;
+    min-width: 1085px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    height: 330px;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .estilo3{
+    background-color: #233142;
+    border-collapse: collapse;
+    align-items: center;
+    margin: 0 auto;
+    width: 400px;
+    height: 200px;
+  }
+  .estilo3 table tr {
+    border-collapse: collapse;
+  }
+
+  .estilo3 img{
+    background-color: #233142;
+    border-radius: 10%;
+    margin: 0 auto ;
+    width: 150px;
+    height: 75px;
+  }
+
+  hr{
+      height: 250px;
+      width: 1px;
+      background-color: rgba(102, 108, 114, 0.9);
+      margin: 0 auto;
+      position: relative;
+      margin-top: -200px;
+      margin-left: 500px;
+  }
+  .estilo4{
+    background-color: #233142;
+    border-collapse: collapse;
+    margin-left: 550px;
+    width: 400px;
+    height: 200px;
+    margin-top: -245px;
+  }
+  
+  .estilo5{
+      margin-left: 600px;
+  }
+
+  .estilo6{
+
+align-items: center;
+align-self: center;
+text-align: center;
+
+  }
+
+  .dropdown-content a:hover {background-image: linear-gradient(180deg,#1b2530 0,rgba(27,37,48,.85));;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+.mySlides {display:none;}/*Aline carrosel*/
+
+

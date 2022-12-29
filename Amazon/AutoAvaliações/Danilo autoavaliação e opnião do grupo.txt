@@ -1,0 +1,5 @@
+Danilo Spinola Mota Batista
+
+Opinião sobre o grupo: O grupo em partes foi organizado e com certa cooperação, superamos algumas barreiras em relação a questão de "Como realizar o site separadamente e juntar no final" usando assim o github e aprendendo a ferramenta "juntos"; porém o grupo em si foi de certa forma se limitando ao css e htm, questão que foi por falta de querer buscar o assunto mesmo.
+
+Autoavaliação: Sinto que em relação ao css consegui me acostumar melhor pois tinha certas dificuldades, porém sinto que pequei em relação aos assuntos do js e criatividade, sendo assim me surpreendi com os grupos apresentados e pretendo melhorar com relação a esse aspecto.
